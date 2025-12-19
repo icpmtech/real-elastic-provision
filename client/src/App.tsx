@@ -13,8 +13,9 @@ interface Product {
 }
 
 interface Hit {
-  source: Product;
-  highlight: {
+  _id: string;
+  _source: Product;
+  highlight?: {
     [key: string]: string[];
   };
 }
@@ -40,7 +41,8 @@ function App() {
     setLoading(true)
     try {
       const response = await axios.get<SearchResponse>(`http://localhost:5000/search?query=${q}`)
-      setResults(response.data.hits)
+      console.log('Search response:', response.data);
+      setResults(response.data.hits || [])
       setAggs(response.data.aggregations)
       setSuggestions([])
     } catch (error) {
@@ -166,13 +168,13 @@ function App() {
                     </div>
                     <div className="result-content">
                       <div className="result-top">
-                        <h3 dangerouslySetInnerHTML={{ __html: hit.highlight?.name ? hit.highlight.name[0] : hit.source.name }} />
-                        <span className="category-tag">{hit.source.category}</span>
+                        <h3 dangerouslySetInnerHTML={{ __html: hit.highlight?.name ? hit.highlight.name[0] : hit._source.name }} />
+                        <span className="category-tag">{hit._source.category}</span>
                       </div>
-                      <p dangerouslySetInnerHTML={{ __html: hit.highlight?.description ? hit.highlight.description[0] : hit.source.description }} />
+                      <p dangerouslySetInnerHTML={{ __html: hit.highlight?.description ? hit.highlight.description[0] : hit._source.description }} />
                       <div className="result-meta">
-                        <span className="price-tag">${hit.source.price}</span>
-                        <span className="id-tag">ID: {hit.source.id.substring(0, 8)}...</span>
+                        <span className="price-tag">${hit._source.price}</span>
+                        <span className="id-tag">ID: {hit._source.id ? hit._source.id.substring(0, 8) : 'N/A'}...</span>
                       </div>
                     </div>
                   </div>
