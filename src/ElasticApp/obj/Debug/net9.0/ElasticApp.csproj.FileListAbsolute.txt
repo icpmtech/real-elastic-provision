@@ -1,0 +1,8 @@
+C:\real-elastic-provision\src\ElasticApp\obj\Debug\net9.0\ElasticApp.csproj.AssemblyReference.cache
+C:\real-elastic-provision\src\ElasticApp\obj\Debug\net9.0\rpswa.dswa.cache.json
+C:\real-elastic-provision\src\ElasticApp\obj\Debug\net9.0\ElasticApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\real-elastic-provision\src\ElasticApp\obj\Debug\net9.0\ElasticApp.AssemblyInfoInputs.cache
+C:\real-elastic-provision\src\ElasticApp\obj\Debug\net9.0\ElasticApp.AssemblyInfo.cs
+C:\real-elastic-provision\src\ElasticApp\obj\Debug\net9.0\ElasticApp.csproj.CoreCompileInputs.cache
+C:\real-elastic-provision\src\ElasticApp\obj\Debug\net9.0\ElasticApp.MvcApplicationPartsAssemblyInfo.cs
+C:\real-elastic-provision\src\ElasticApp\obj\Debug\net9.0\ElasticApp.MvcApplicationPartsAssemblyInfo.cache
