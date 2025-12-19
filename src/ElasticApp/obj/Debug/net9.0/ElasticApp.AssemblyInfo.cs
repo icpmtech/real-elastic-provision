@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ElasticApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bcb8d7f731c1700f734c9d1df737615047ac6234")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d2beae0b30893b5aeeb0630aa378dcd931910380")]
 [assembly: System.Reflection.AssemblyProductAttribute("ElasticApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ElasticApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
