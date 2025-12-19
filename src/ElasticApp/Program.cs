@@ -58,8 +58,8 @@ app.MapGet("/search", async (ElasticsearchClient client, string query) =>
         )
         .Highlight(h => h
             .Fields(f => f
-                .Add(p => p.Name, hf => hf)
-                .Add(p => p.Description, hf => hf)
+                .Add("name", new Elastic.Clients.Elasticsearch.HighlightField())
+                .Add("description", new Elastic.Clients.Elasticsearch.HighlightField())
             )
         )
     );
