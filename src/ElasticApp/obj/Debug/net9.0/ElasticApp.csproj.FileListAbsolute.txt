@@ -6,3 +6,4 @@ C:\real-elastic-provision\src\ElasticApp\obj\Debug\net9.0\ElasticApp.AssemblyInf
 C:\real-elastic-provision\src\ElasticApp\obj\Debug\net9.0\ElasticApp.csproj.CoreCompileInputs.cache
 C:\real-elastic-provision\src\ElasticApp\obj\Debug\net9.0\ElasticApp.MvcApplicationPartsAssemblyInfo.cs
 C:\real-elastic-provision\src\ElasticApp\obj\Debug\net9.0\ElasticApp.MvcApplicationPartsAssemblyInfo.cache
+C:\real-elastic-provision\src\ElasticApp\obj\Debug\net9.0\ElasticApp.sourcelink.json
