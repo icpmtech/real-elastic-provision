@@ -56,12 +56,12 @@ app.MapGet("/search", async (ElasticsearchClient client, string query) =>
                 .Fuzziness(new Fuzziness("AUTO"))
             )
         )
-        .Highlight(h => h
-            .Fields(f => f
-                .Add("name", new Elastic.Clients.Elasticsearch.HighlightField())
-                .Add("description", new Elastic.Clients.Elasticsearch.HighlightField())
-            )
-        )
+        //.Highlight(h => h
+        //    .Fields(f => f
+        //        .Add("name", new Elastic.Clients.Elasticsearch.HighlightField())
+        //        .Add("description", new Elastic.Clients.Elasticsearch.HighlightField())
+        //    )
+        //)
     );
 
     return response.IsValidResponse ? Results.Ok(response.Hits) : Results.BadRequest(response.DebugInformation);
